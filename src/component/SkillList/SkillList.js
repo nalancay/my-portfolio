@@ -9,11 +9,13 @@ function getPathIcon(icon) {
 const ItemSkill = ({ skillIconName }) => {
   return (
     <div className="skill">
-      <img
-        className="img_skill"
-        src={getPathIcon(skillIconName)}
-        alt={`${skillIconName} icon`}
-      />
+      <Fade left>
+        <img
+          className="img_skill"
+          src={getPathIcon(skillIconName)}
+          alt={`${skillIconName} icon`}
+        />
+      </Fade>
       <h1 className="title_skill">{skillIconName}</h1>
     </div>
   );
@@ -28,12 +30,10 @@ export const SkillList = () => {
           <div className="content_skills">
             {Object.keys(IconSkillList).map((key_sKillName, index) => {
               return (
-                <Fade left>
-                  <ItemSkill
-                    key={index}
-                    skillIconName={IconSkillList[key_sKillName]}
-                  />
-                </Fade>
+                <ItemSkill
+                  key={index}
+                  skillIconName={IconSkillList[key_sKillName]}
+                />
               );
             })}
           </div>

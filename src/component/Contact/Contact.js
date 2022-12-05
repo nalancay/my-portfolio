@@ -12,8 +12,8 @@ function ItemContact({ name, href, pathImg }) {
 export const Contact = () => {
   return (
     <footer id="contact">
-      <Zoom>
-        <div className="container_5">
+      <div className="container_5">
+        <Zoom>
           <div className="content_title">
             <h1 className="title_footer">Connect with me</h1>
             <img src="img/send.svg" alt="Send me icon" />
@@ -31,17 +31,13 @@ export const Contact = () => {
               );
             })}
           </div>
-          <div className="arrow_up" id="arrow_up">
-            <a href="#body" className="button_up">
-              <img
-                src="img/arrow-up.svg"
-                alt="arrow up"
-                className="img_arrow"
-              />
-            </a>
-          </div>
+        </Zoom>
+        <div className="arrow_up" id="arrow_up">
+          <a href="#body" className="button_up">
+            <img src="img/arrow-up.svg" alt="arrow up" className="img_arrow" />
+          </a>
         </div>
-      </Zoom>
+      </div>
     </footer>
   );
 };
