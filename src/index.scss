@@ -1,0 +1,12 @@
+/*base*/
+@use "sass/variables";
+@use "sass/reset";
+
+html,
+body {
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--fontSize16);
+  scroll-behavior: smooth;
+}

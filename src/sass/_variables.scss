@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,900;1,100;1,200;1,300;1,400&display=swap");
+:root {
+  /*fonts*/
+  --font-poppins: "Poppins", sans-serif;
+  --font-chakra: "Chakra Petch", sans-serif;
+  --font-mono: "PT Mono", monospace;
+  --fontSize16: 1rem;
+  --fontSize14: 0.875rem;
+
+  /*colors*/
+  --black: #000;
+  --white: #ffff;
+  --coral: #fc97a0;
+  --pink: #fdc4c9;
+  --pink-light: #fedadd;
+  --font-hover: #fc9f97;
+  --clear: #fff1f2;
+  --purple: #17052c;
+  --shadow: rgba(128, 128, 128, 0.699);
+  --hover: #fcd8d4;
+}

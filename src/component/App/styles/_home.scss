@@ -1,0 +1,49 @@
+@use "../../../sass/variables";
+
+.home {
+  .container {
+    background-image: url("../../../../public/img/wickedbackground.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 8rem;
+
+    .content_home {
+      margin-left: 25px;
+      .title_1 {
+        margin-top: 0;
+        font-family: var(--font-chakra);
+        font-size: 26px;
+        letter-spacing: 8px;
+      }
+    }
+
+    .content_img {
+      .svg_plant {
+        margin: auto;
+      }
+    }
+
+    @media only screen and (max-width: 869px) {
+      .content_img__one {
+        visibility: hidden;
+        position: absolute;
+      }
+    }
+
+    @media only screen and (min-width: 670px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-bottom: 5%;
+    }
+    @media only screen and (min-width: 900px) {
+      .title_1 {
+        font-size: 36px;
+        letter-spacing: 10px;
+      }
+      .title_2 {
+        font-size: 35px;
+      }
+    }
+  }
+}

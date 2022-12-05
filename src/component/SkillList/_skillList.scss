@@ -1,0 +1,37 @@
+.content_skills {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(14%, 100px));
+  grid-gap: 16px;
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 18px;
+    box-shadow: 0 3px 10px var(--shadow);
+    margin: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    &:hover {
+      transform: scale(1.02);
+      background-color: var(--hover);
+    }
+
+    .img_skill {
+      width: 45px;
+    }
+    .title_skill {
+      font-weight: normal;
+      font-size: 13px;
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+
+  @media (max-width: 805px) {
+    grid-template-columns: repeat(auto-fit, minmax(14%, 100px));
+    justify-content: center;
+  }
+}
