@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import Zoom from "react-reveal/Zoom";
 
 const RenderSvgPlant = ({ className }) => (
   <div className={className}>
@@ -51,37 +51,39 @@ export default function Header() {
 
       <section id="home" className="home">
         <div className="container">
-          <RenderSvgPlant className="content_img__one" />
-          <div className="content_home">
-            <h1 className="title_1">Hello world!</h1>
-            <h2 className="title_2">I´m Natalia Alancay</h2>
-            <p className="description">Frontend developer</p>
-            <div className="social_media">
-              <a
-                href="https://www.linkedin.com/in/natalia-alancay-454747b9/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="social_img"
-                  src="img/linkedin.svg"
-                  alt="icon-linkedin"
-                />
-              </a>
-              <a
-                href="https://github.com/Natalia2612"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="social_img"
-                  src="img/github.svg"
-                  alt="icon-github"
-                />
-              </a>
+          <Zoom>
+            <RenderSvgPlant className="content_img__one" />
+            <div className="content_home">
+              <h1 className="title_1">Hello world!</h1>
+              <h2 className="title_2">I´m Natalia Alancay</h2>
+              <p className="description">Frontend developer</p>
+              <div className="social_media">
+                <a
+                  href="https://www.linkedin.com/in/natalia-alancay-454747b9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="social_img"
+                    src="img/linkedin.svg"
+                    alt="icon-linkedin"
+                  />
+                </a>
+                <a
+                  href="https://github.com/Natalia2612"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="social_img"
+                    src="img/github.svg"
+                    alt="icon-github"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <RenderSvgPlant className="content_img" />
+            <RenderSvgPlant className="content_img" />
+          </Zoom>
         </div>
       </section>
     </header>

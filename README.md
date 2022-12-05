@@ -3,3 +3,4 @@ Skills:
 📌 Html
 📌 Sass
 📌 React
+📌 Scroll React Reveal
