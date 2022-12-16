@@ -1,6 +1,7 @@
 import { IconSkillList } from "constants/SkillList.constants";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
+import { FormattedMessage } from "react-intl";
 
 function getPathIcon(icon) {
   return `img/skills/${icon}.png`;
@@ -26,7 +27,9 @@ export const SkillList = () => {
     <section id="skills" className="scroll">
       <div className="container_4">
         <Zoom>
-          <h1 className="title_sections">Skills</h1>
+          <h1 className="title_sections">
+            <FormattedMessage id="navbar.skills" />
+          </h1>
           <div className="content_skills">
             {Object.keys(IconSkillList).map((key_sKillName, index) => {
               return (

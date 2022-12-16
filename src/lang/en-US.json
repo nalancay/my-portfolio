@@ -1,0 +1,13 @@
+{
+  "navbar.home": "Home",
+  "navbar.about": "About me",
+  "navbar.skills": "Skills",
+  "navbar.contact": "Contact",
+  "app.title_1": "Hello world!",
+  "app.title_2": "I´m {name}",
+  "app.description": "Frontend developer",
+  "app.about.p0": "📌 I am a system analyst and frontend developer. 🎨✨",
+  "app.about.p1": "📌 Throughout my professional life, I was able to focus and enter the world of IT. Lately I've been working as a React.js frontend developer.",
+  "app.about.p2": "📌 I like to continue learning about technologies and frameworks for web development. 🌈",
+  "app.title.contact": "Connect with me"
+}

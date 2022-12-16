@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { FormattedMessage } from "react-intl";
 import Zoom from "react-reveal/Zoom";
+import { ItemNavBar } from "./ItemNavbar";
+import { LangContext } from "context/langContext";
 
 const RenderSvgPlant = ({ className }) => (
   <div className={className}>
@@ -19,32 +23,35 @@ export default function Header() {
     let siteNav = document.getElementById("site-nav");
     siteNav.classList.toggle("nav_open");
   };
+  const lang = useContext(LangContext);
 
   return (
     <header className="header">
       <nav>
-        <div className="nav-buttons">
-          <button
-            className="ham"
-            type="button"
-            onClick={toggleMenu}
-            id="btn-menu"
-          >
-            <img src="img/menu.svg" alt="hamburguer icon" />
+        <div className="flag">
+          <button onClick={() => lang.setLang("es-ES")}>
+            <img src={"img/spain.png"} alt="Logo" />
           </button>
+          <button onClick={() => lang.setLang("en-US")}>
+            <img src={"img/united.png"} alt="Logo" />
+          </button>
+        </div>
+        <div className="nav-buttons">
+          <div>
+            <button
+              className="ham"
+              type="button"
+              onClick={toggleMenu}
+              id="btn-menu"
+            >
+              <img src="img/menu.svg" alt="hamburguer icon" />
+            </button>
+          </div>
           <div className="site-nav" id="site-nav">
-            <a className="navbar" href="#home">
-              Home
-            </a>
-            <a className="navbar" href="#about">
-              About me
-            </a>
-            <a className="navbar" href="#skills">
-              Skills
-            </a>
-            <a className="navbar" href="#contact">
-              Contact
-            </a>
+            <ItemNavBar idItemNavbar="navbar.home" href="home" />
+            <ItemNavBar idItemNavbar="navbar.about" href="about" />
+            <ItemNavBar idItemNavbar="navbar.skills" href="skills" />
+            <ItemNavBar idItemNavbar="navbar.contact" href="contact" />
           </div>
         </div>
       </nav>
@@ -54,9 +61,18 @@ export default function Header() {
           <Zoom>
             <RenderSvgPlant className="content_img__one" />
             <div className="content_home">
-              <h1 className="title_1">Hello world!</h1>
-              <h2 className="title_2">I´m Natalia Alancay</h2>
-              <p className="description">Frontend developer</p>
+              <h1 className="title_1">
+                <FormattedMessage id="app.title_1" />
+              </h1>
+              <h2 className="title_2">
+                <FormattedMessage
+                  id="app.title_2"
+                  values={{ name: "Natalia Alancay" }}
+                />
+              </h2>
+              <p className="description">
+                <FormattedMessage id="app.description" />
+              </p>
               <div className="social_media">
                 <a
                   href="https://www.linkedin.com/in/natalia-alancay-454747b9/"
