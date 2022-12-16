@@ -23,6 +23,27 @@
       }
     }
 
+    .flag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flag button {
+      border: none;
+      cursor: pointer;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      margin: 10px;
+    }
+
+    .flag button img {
+      width: 100%;
+    }
+
     a.navbar {
       text-decoration: none;
       font-size: var(--fontSize14);
@@ -57,9 +78,16 @@
         border-radius: 50%;
         background-color: var(--pink-light);
         padding: 12px;
+        margin-top: -25px;
+        margin-left: -51px;
         position: fixed;
         z-index: 5;
       }
+
+      .flag {
+        margin-right: 56px;
+      }
+
       .nav-buttons {
         display: flex;
         flex-direction: column;
@@ -80,7 +108,7 @@
         border: 1px solid var(--coral);
         padding: 0;
         clip-path: polygon(0 8%, 92% 8%, 100% 0, 100% 100%, 0 100%);
-        margin-top: 45px;
+        margin-top: 21px;
         height: 55%;
         width: 90%;
         z-index: 5;
@@ -103,6 +131,9 @@
         &:active {
           background-color: var(--coral);
         }
+      }
+      .containerNav {
+        margin-right: 36px;
       }
     }
   }

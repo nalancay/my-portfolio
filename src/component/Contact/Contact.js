@@ -1,4 +1,5 @@
 import { getContactList } from "constants/ContactList.constants";
+import { FormattedMessage } from "react-intl";
 import Zoom from "react-reveal/Zoom";
 
 function ItemContact({ name, href, pathImg }) {
@@ -15,7 +16,9 @@ export const Contact = () => {
       <div className="container_5">
         <Zoom>
           <div className="content_title">
-            <h1 className="title_footer">Connect with me</h1>
+            <h1 className="title_footer">
+              <FormattedMessage id="app.title.contact" />
+            </h1>
             <img src="img/send.svg" alt="Send me icon" />
           </div>
           <p className="mail">alancaynatalia@gmail.com</p>
