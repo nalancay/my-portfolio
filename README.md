@@ -1,5 +1,5 @@
 ✨ Welcome to my portfolio
-Skills:
+### `Skill:`
 
 > 📌 Html
 > 📌 Sass
@@ -9,4 +9,8 @@ Skills:
 > 📌 use of context concept to share global data
 > 📌 save the language in localstorage for when you reload the web page
 
-Web site: https://my-portfolio-nalancay.netlify.app/
+Link WebSite: [https://my-portfolio-nalancay.netlify.app/](https://my-portfolio-nalancay.netlify.app/)
+
+### `Características funcionales:`
+
+📌 Muestra banderas para elgir opciones de ver el sitio web del porfolio traducido en inlgés o español.
