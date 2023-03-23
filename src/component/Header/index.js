@@ -86,7 +86,7 @@ export default function Header() {
                   />
                 </a>
                 <a
-                  href="https://github.com/Natalia2612"
+                  href="https://github.com/nalancay"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

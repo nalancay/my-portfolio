@@ -6,7 +6,7 @@ export const getContactList = () => [
   },
   {
     name: "github",
-    href: "https://github.com/Natalia2612",
+    href: "https://github.com/nalancay",
     pathImg: "img/github2.svg",
   },
   {
