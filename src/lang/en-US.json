@@ -7,7 +7,7 @@
   "app.title_2": "I´m {name}",
   "app.description": "Frontend developer (ReactJS)",
   "app.about.p0": "📌 I am a systems analyst and frontend developer with solid experience in web development. 🎨✨",
-  "app.about.p1": "📌 Programming in React mainly and with additional skills in TypeScript, testing with jest, consumption of APIs Rest, context, redux, Material UI, etc. and those mentioned in the 'Skills' section. ✨ Help the companies where I have worked to contribute in building complex web applications that serve more than 1,000,000+ users with modern technologies.",
+  "app.about.p1": "📌 Programming in React mainly and with additional skills in TypeScript, testing with jest, consumption of APIs Rest, context, redux, Material UI, etc. and those mentioned in the 'Skills' section. ✨ Help the companies where I have worked to contribute in building complex web applications that serve more than 100,000+ users with modern technologies.",
   "app.about.p2": "📌 I like to continue learning about technologies and frameworks for web development. 🌈",
   "app.title.contact": "Connect with me"
 }
