@@ -3,6 +3,7 @@
   "navbar.about": "Sobre Mí",
   "navbar.skills": "Habilidades",
   "navbar.contact": "Contacto",
+  "navbar.projects": "Projectos",
   "app.title_1": "¡Hola Mundo!",
   "app.title_2": "Soy {name}",
   "app.description": "Desarrollador front-end(ReactJS)",

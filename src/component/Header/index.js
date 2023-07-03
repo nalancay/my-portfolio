@@ -50,6 +50,7 @@ export default function Header() {
           <div className="site-nav" id="site-nav">
             <ItemNavBar idItemNavbar="navbar.home" href="home" />
             <ItemNavBar idItemNavbar="navbar.about" href="about" />
+            <ItemNavBar idItemNavbar="navbar.projects" href="projects" />
             <ItemNavBar idItemNavbar="navbar.skills" href="skills" />
             <ItemNavBar idItemNavbar="navbar.contact" href="contact" />
           </div>
@@ -59,7 +60,7 @@ export default function Header() {
       <section id="home" className="home">
         <div className="container">
           <Zoom>
-            <RenderSvgPlant className="content_img__one" />
+            <div />
             <div className="content_home">
               <h1 className="title_1">
                 <FormattedMessage id="app.title_1" />

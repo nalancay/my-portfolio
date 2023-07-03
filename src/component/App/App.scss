@@ -3,6 +3,7 @@
 @use "../About/about";
 @use "../SkillList/skillList";
 @use "../Contact/contact";
+@use "../Projects/projects";
 
 .App {
   .header {
@@ -141,7 +142,7 @@
   .container_2,
   .container_3,
   .container_4 {
-    padding: 45px;
+    padding: 30px;
   }
 
   @mixin line_before {

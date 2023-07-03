@@ -3,6 +3,7 @@
   "navbar.about": "About me",
   "navbar.skills": "Skills",
   "navbar.contact": "Contact",
+  "navbar.projects": "Projects",
   "app.title_1": "Hello world!",
   "app.title_2": "I´m {name}",
   "app.description": "Frontend developer (ReactJS)",
